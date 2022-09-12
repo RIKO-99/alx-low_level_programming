@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
 
-/*
+/**
  * main - Entry point
  *
- * print lower case alphabets in reverse
+ * prints the lowercase alphabets in reverse
  *
  * Return: 0 Always (Success)
  *
