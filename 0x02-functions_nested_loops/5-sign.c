@@ -21,10 +21,14 @@ int print_sign(int n)
 		test = 0;
 		_putchar(0);
 	}
-	else 
+	else if
 	{
 		test = -1;
 		_putchar('-');
+	}
+	else
+	{
+		_putchar(0)
 	}
 	return (test);
 }
