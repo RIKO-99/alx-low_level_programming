@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+ * print_numbers - prints from integer 0 to 9
+ *
+ * Return: integer value
+ *
+ */
+void print_numbers(void)
+{
+	int c;
+
+	for (c = 'o'; c <= '9'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
+}
