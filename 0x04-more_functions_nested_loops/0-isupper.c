@@ -2,23 +2,16 @@
 #include <ctype.h>
 
 /**
- * main - checks the code
+ * _isupper - checks the code
+ * @c: character value
  *
- * Return: ALways 0
+ * Return: ALways 0 or 1
  *
  */
 int _isupper(int c)
 {
-	char uppercase = 'A';
-	int isupper = 0;
-
-	for (; uppercase <= 'Z'; uppercase++)
-	{
-		if (c == uppercase)
-		{
-			isupper = 1;
-			break;
-		}
-	}
-	return (isupper);
+	if (isupper(c))
+		return (1);
+	else
+		return (0);
 }
