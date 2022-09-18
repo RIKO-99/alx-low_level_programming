@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagnol - prototype that draws a diagnol line
+ * print_diagonal - prototype that draws a diagnol line
  * @n: input integer
  * Return: Always 0
  */
