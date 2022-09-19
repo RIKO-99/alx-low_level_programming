@@ -18,17 +18,17 @@ int main(void)
 		}
 		else if (n % 3 == 0)
 		{
-			_putchar(" Fizz");
+			putchar(" Fizz");
 		}
 		else if (n % 5 == 0)
 		{
-			_putchar(" Buzz");
+			putchar(" Buzz");
 		}
 		else
 		{
-			_putchar(" %d", n);
+			putchar(" %d", n);
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
