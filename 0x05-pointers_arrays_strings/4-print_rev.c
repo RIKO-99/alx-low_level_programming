@@ -3,24 +3,23 @@
 /**
  * print_rev - prints the reverse of a string
  *
- * @s: charater in Ascii
+ * @s: string value
  *
  * Return: Nothing
  */
 void print_rev(char *s)
 {
-	int reverse;
-	int str_len;
+	int i = 0;
 
-	reverse = 0;
-
-	while (*(s + reverse) != '\0')
+	while (s[i] != '\0')
 	{
-		reverse++;
+		i++;
 	}
-	for (str_len = reverse - 1; str_len >= 0; str_len--)
+	i--;
+	while (i >= 0)
 	{
-		_putchar(s[str_len]);
+		_putchar('\n')i;
+		i--;
 	}
 	_putchar('\n');
 }
