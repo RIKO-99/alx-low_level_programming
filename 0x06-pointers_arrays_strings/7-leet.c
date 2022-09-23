@@ -15,23 +15,21 @@
  */
 char *leet(char *s)
 {
-	int stringCount, leetCount;
-	char leetLetters[] = "aAeEoOtTlL";
-	char leetNums[] = "43071";
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	stringCount = 0;
-	while (s[stringCount] != '\0')
+	while (*(s + count) != '\0')
 	{
-		leetCount = 0;
-		while (leetCount < 10)
+		for (i = 0; i < 5; i++)
 		{
-			if (leetLetters[leetCount] == s[stringCount])
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
 			{
-				s[stringCount] = leetNums[leetCount];
+				*(s + count) = numbers[i];
+				break;
 			}
-			leetcount++;
 		}
-		stringCount++;
 	}
-	return (s);
+	count++;
 }
