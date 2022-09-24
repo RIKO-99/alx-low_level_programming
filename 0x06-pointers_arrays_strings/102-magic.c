@@ -15,8 +15,9 @@ int main(void)
 	a[2] = 1024;
 	p = &n;
 
-	/*
-	 * code goes here
+
+	p[5] = 98;
+	/* code goes here
 	 * only one statement to be changed
 	 */
 	p[5] = 98;
