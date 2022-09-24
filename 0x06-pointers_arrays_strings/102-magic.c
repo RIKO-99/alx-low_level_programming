@@ -20,9 +20,8 @@ int main(void)
 	/*
 	 * code goes here
 	 * only line 19 statement to be changed
+	 * prints 98\n
 	 */
-	p[5] = 98;
-	/* prints 98\n */
 	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
