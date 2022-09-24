@@ -17,8 +17,9 @@ int main(void)
 
 
 	p[5] = 98;
-	/* code goes here
-	 * only one statement to be changed
+	/*
+	 * code goes here
+	 * only line 19 statement to be changed
 	 */
 	p[5] = 98;
 	/* prints 98\n */
