@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _sqrt(int x, int y);
+int _sqrt(int a, int b);
 /**
  * _sqrt_recursion - main function returns square root of a number
  * @n: integer
@@ -24,19 +24,19 @@ int _sqrt_recursion(int n)
 
 /**
  * _sqrt - find the square root of a number
- * @x: number to multiply
- * @y: base number, square of x
+ * @a: number to multiply
+ * @b: base number, square of x
  *
  * Return: y if true || -1
  */
-int _sqrt(int x, int y)
+int _sqrt(int a, int b)
 {
-	if (y * y == x)
-		return (y);
+	if (b * b == a)
+		return (b);
 
-	else if (y * y > x)
+	else if (b * b > a)
 		return (-1);
 
 	else
-		return (_sqrt(x, y + 1));
+		return (_sqrt(a, b + 1));
 }
