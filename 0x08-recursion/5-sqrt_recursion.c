@@ -1,34 +1,42 @@
 #include "main.h"
 
+int _sqrt(int x, int y);
 /**
  * _sqrt_recursion - main function returns square root of a number
  * @n: integer
  *
- * Return:  square of a number
+ * Return: 0
  */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(n, 1));
+	if (n < 0)
+		return (-1);
+
+	else if (n == 0)
+		return (1)
+
+	else if (n == 1)
+		return (1);
+
+	else
+		return (_sqrt(n, 1));
 }
+
 /**
- * _sqrt - sqrt_recursion
- * @i: integer param
- * @n: integer param
- * Return: sqrt
+ * _sqrt - find the square root of a number
+ * @x: number to multiply
+ * @y: base number, square of x
+ *
+ * Return: y if true || -1
  */
-int _sqrt(int n, int i)
+int _sqrt(int x, int y)
 {
-if (n < 0)
-{
-return (-1);
-}
-if ((i * i) > n)
-{
-return (-1);
-}
-if (i * i == n)
-{
-return (i);
-}
-return (_sqrt(n, i + 1));
+	if (y * y == x)
+		return (y);
+
+	else if (y * y > x)
+		return (-1);
+
+	else
+		return (_sqrt(x, y + 1));
 }
