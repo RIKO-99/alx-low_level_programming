@@ -10,27 +10,42 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len_s1, len_s2, space, i;
-	char *joint;
+	char *p;
+	unsigned int size1 = 0, size2 = 0, i;
 
-	len_s1 = s1 == NULL ? 0 : strlen(s1);
-	len_s2 = s2 == NULL ? 0 : strlen(s2);
-	if (n >= len_s2)
-		n = len_s2;
+	if (s1 == NULL)
+		s1 = "";
 
-	space = sizeof(char) * (len_s1 + n + 1);
-	joint = malloc(space);
-	if (!joint)
-		return (NULL);
+	if (s2 == NULL)
+		s2 = "";
 
-	for (i - 0; i < space; i++)
+	while (s1[size1] != '\0')
 	{
-		if (i < len_s1)
-			*(joint + i) = *(s1 + i);
-		if (i >= len_s1 && i < space - 1)
-			*(joint + 1) = *(s2 = (i - len_s1));
-		if (i == space - 1)
-			*(joint + 1) = '\0';
+		size1++;
 	}
-	return (joint);
+
+	while (s2[size2] != '\0')
+	{
+		size2++;
+	}
+
+	if (n > size2)
+	n = size2;
+	p = malloc((size1 + n + 1) * sizeof(char));
+
+	if (p == NULL)
+		return (0);
+
+	for (i = 0; i < size1; i++)
+	{
+	p[i] = s1[i];
+	}
+
+	for (; i < (size1 + n); i++)
+	{
+		p[i] = s2[i - size1];
+	}
+	p[i] = '\0';
+
+	return (p);
 }
