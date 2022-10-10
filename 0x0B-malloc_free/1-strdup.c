@@ -14,6 +14,11 @@ char *_strdup(char *str)
 	if (dst == NULL || str == NULL)
 		return (NULL);
 
+	if (!str)
+	{
+		return (NULL);
+	}
+
 	strcpy(dst, str);
 	return (dst);
 	free(dst);
