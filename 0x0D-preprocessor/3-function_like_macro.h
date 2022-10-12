@@ -1,9 +1,7 @@
-#ifndef MACRO_H
-#define MACRO_H
+#ifndef FUNCTION_LIKE_MACRO_H
 
-#define ABS(x)
+#define FUNCTION_LIKE_MACRO_H
 
-#include <stdio.h>
+#define ABS(x) ((x < 0) ? (x) * (-1) : (x))
 
-
-#endif /*MACRO_H*/
+#endif
