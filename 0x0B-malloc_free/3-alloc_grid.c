@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * alloc_grid - returns a pointer to a 2D array if int
+ * alloc_grid - returns a pointer to a 2D array of int
  * @width: width of the array
  * @height: height of the array
  *
