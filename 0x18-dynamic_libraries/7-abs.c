@@ -12,6 +12,7 @@
 int _abs(int n)
 {
 	int num;
+	num = 0;
 
 	n = abs(num);
 	return (0);
